@@ -44,7 +44,8 @@ console.log(cars instanceof Array); // true if it's an array
 console.log(typeof cars); // returns objects
 
 //checking if an element exists in an array
-console.log(cars.includes("Volvo")); // true
+
+console.log(cars.includes("Volvo"));
 
 // THE at METHOD
 console.log(cars.at(2).toUpperCase());
@@ -107,9 +108,6 @@ console.log(hasPriceGreaterThanNinety); // false
 //find
 const firstNumberGreaterThanTwenty = prices.find((price) => price > 20);
 console.log(firstNumberGreaterThanTwenty); //34
-
-const lastNumberGreaterThanTwenty = prices.findLast((price) => price > 20);
-console.log(lastNumberGreaterThanTwenty); //48
 
 //map 
 const halfOfEachPrice = prices.map((price) => price / 2);

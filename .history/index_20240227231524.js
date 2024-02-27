@@ -108,9 +108,6 @@ console.log(hasPriceGreaterThanNinety); // false
 const firstNumberGreaterThanTwenty = prices.find((price) => price > 20);
 console.log(firstNumberGreaterThanTwenty); //34
 
-const lastNumberGreaterThanTwenty = prices.findLast((price) => price > 20);
-console.log(lastNumberGreaterThanTwenty); //48
-
 //map 
 const halfOfEachPrice = prices.map((price) => price / 2);
 console.log(halfOfEachPrice); //[17, 27, 11.5, 8.5, 44, 10.5, 33.5, 24]
