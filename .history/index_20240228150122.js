@@ -123,19 +123,14 @@ const highestAge = Math.max(...arrayAges);
 console.log(`Oldest age is: ${highestAge}\nYoungest age is: ${lowestAge}`);
 
 // comparison operators
-let x = 5;
-console.log( x == "5"); //true Loose equality (performs type coercion)
-console.log( x == 5); // true
-console.log( x === "5"); //false Strict equality (checks both type and value)
-console.log( x === 5); // true
-console.log(x !== "5"); // true Strict inequality 
-console.log( x !== 5 ); // false
+
 // variable hoisting
-console.log(y); // undefined
-var y = 10;
-console.log(y); // 10
+console.log(x); // undefined
+var x = 10;
+console.log(x); // 10
 
 // CLASS
+
 class Student {
     constructor(name) {
         this.name = name;
@@ -143,18 +138,8 @@ class Student {
 }
 
 let student = new Student("Blatter");
-console.log(student.name); // Blatter
+console.log(student.name);
+
+
 
 // STRING
-// String Methods
-const textString = "javascript";
-console.log(textString.at(0)); // j
-console.log(textString.charCodeAt(0)); // returns the unicode of j (106)
-console.log(textString.startsWith("JAV".toLowerCase())); // true
-console.log(textString.endsWith("Script")); // false
-console.log(textString.includes("vas")); // true
-console.log(textString.slice(0, 4).localeCompare("java")); // returns 0 cause it's true (-1 if it was false)
-console.log(textString.replace(textString.slice(textString.indexOf("s")), "")); // java (replace first occurence)
-console.log(textString.replaceAll("a", "e")); //jevescript (replace all occurences)
-
-  

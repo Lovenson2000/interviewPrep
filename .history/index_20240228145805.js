@@ -112,49 +112,31 @@ console.log(halfOfEachPrice); //[17, 27, 11.5, 8.5, 44, 10.5, 33.5, 24]
 
 // MATH
 
-// random number
+//random number
 const randomNumberFromZeroToTwenty = Math.floor(Math.random() * 21); // + 1 will start from 1 rather than 0
 console.log(randomNumberFromZeroToTwenty);
 
-// minimum and maximum values in an array
+//Minimum and Maximum values in an array
 const arrayAges = [23, 19, 14, 26, 46, 8];
 const lowestAge = Math.min(...arrayAges);
 const highestAge = Math.max(...arrayAges);
 console.log(`Oldest age is: ${highestAge}\nYoungest age is: ${lowestAge}`);
 
-// comparison operators
-let x = 5;
-console.log( x == "5"); //true Loose equality (performs type coercion)
-console.log( x == 5); // true
-console.log( x === "5"); //false Strict equality (checks both type and value)
-console.log( x === 5); // true
-console.log(x !== "5"); // true Strict inequality 
-console.log( x !== 5 ); // false
-// variable hoisting
-console.log(y); // undefined
-var y = 10;
-console.log(y); // 10
+// Variable hoisting
+console.log(x); // undefined
+var x = 10;
+console.log(x); // 10
 
 // CLASS
+
 class Student {
     constructor(name) {
         this.name = name;
     }
 }
 
-let student = new Student("Blatter");
-console.log(student.name); // Blatter
+student = new Student("Blatter");
+
+
 
 // STRING
-// String Methods
-const textString = "javascript";
-console.log(textString.at(0)); // j
-console.log(textString.charCodeAt(0)); // returns the unicode of j (106)
-console.log(textString.startsWith("JAV".toLowerCase())); // true
-console.log(textString.endsWith("Script")); // false
-console.log(textString.includes("vas")); // true
-console.log(textString.slice(0, 4).localeCompare("java")); // returns 0 cause it's true (-1 if it was false)
-console.log(textString.replace(textString.slice(textString.indexOf("s")), "")); // java (replace first occurence)
-console.log(textString.replaceAll("a", "e")); //jevescript (replace all occurences)
-
-  

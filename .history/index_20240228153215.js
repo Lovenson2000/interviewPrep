@@ -145,6 +145,8 @@ class Student {
 let student = new Student("Blatter");
 console.log(student.name); // Blatter
 
+
+
 // STRING
 // String Methods
 const textString = "javascript";
@@ -153,8 +155,4 @@ console.log(textString.charCodeAt(0)); // returns the unicode of j (106)
 console.log(textString.startsWith("JAV".toLowerCase())); // true
 console.log(textString.endsWith("Script")); // false
 console.log(textString.includes("vas")); // true
-console.log(textString.slice(0, 4).localeCompare("java")); // returns 0 cause it's true (-1 if it was false)
-console.log(textString.replace(textString.slice(textString.indexOf("s")), "")); // java (replace first occurence)
-console.log(textString.replaceAll("a", "e")); //jevescript (replace all occurences)
-
-  
+console.log(textString.slice(0, 4).localeCompare("pava"));

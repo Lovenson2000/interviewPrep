@@ -157,4 +157,21 @@ console.log(textString.slice(0, 4).localeCompare("java")); // returns 0 cause it
 console.log(textString.replace(textString.slice(textString.indexOf("s")), "")); // java (replace first occurence)
 console.log(textString.replaceAll("a", "e")); //jevescript (replace all occurences)
 
+// Check if geolocation is supported by the browser
+if (navigator.geolocation) {
+    // Request the current position
+    navigator.geolocation.getCurrentPosition(
+      // Success callback function
+      function(position) {
+        console.log("Latitude:", position.coords.latitude);
+        console.log("Longitude:", position.coords.longitude);
+      },
+      // Error callback function
+      function(error) {
+        console.error("Error getting location:", error.message);
+      }
+    );
+  } else {
+    console.error("Geolocation is not supported by this browser.");
+  }
   

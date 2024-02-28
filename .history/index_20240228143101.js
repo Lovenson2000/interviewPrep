@@ -6,12 +6,12 @@ const cars = ["Saab", "Volvo", "BMW", "Mercedez"];
 // LOOPING METHODS
 cars.forEach((car) => console.log(car.toUpperCase())); //forEach
 
-for (let i = 0; i < cars.length; i++) { //for loop
+for(let i = 0; i < cars.length; i++) { //for loop
     console.log(cars[i].toUpperCase());
 }
 
 let i = 0;
-while (i < cars.length) { //while loop
+while(i < cars.length) { //while loop
     console.log(cars[i].toLowerCase());
     i++;
 }
@@ -62,7 +62,7 @@ mergedArray.copyWithin(2, 0, 3);
 console.log(mergedArray); // [34, 56, 34, 56, 23, 54]
 
 // Flatting an array
-const multiDimensionalArray = [[1, 2], [3, 4], [5, 6]];
+const multiDimensionalArray = [[1,2],[3,4],[5,6]];
 const flattenedArray = multiDimensionalArray.flat();
 console.log(flattenedArray); //[ 1, 2, 3, 4, 5, 6 ]
 
@@ -78,12 +78,11 @@ console.log(sortedNames); // [ 'Ander', 'Blatter', 'Jeff', 'Roger', 'Wado' ]
 console.log(sortedNames.reverse()); // [ 'Wado', 'Roger', 'Jeff', 'Blatter', 'Ander' ]
 
 const numbers = [40, 100, 1, 5, 25, 10];
-const sortedNumbers = numbers.sort((a, b) => a - b);
+const sortedNumbers = numbers.sort((a, b) => a - b); 
 console.log(sortedNumbers); // [1, 5, 10, 25, 40, 100 ]
 console.log(sortedNumbers.reverse()); //[ 100, 40, 25, 10, 5, 1 ]
 
 // Average and Sum using reduce
-const ages = [23, 19, 14, 26, 46, 8];
 const sum = ages.reduce((acc, current) => acc + current, 0);
 const average = parseFloat(sum / ages.length).toFixed(2); // up to 2 decimals
 console.log("Sum is ", sum, "and average is: ", average);
@@ -112,49 +111,12 @@ console.log(halfOfEachPrice); //[17, 27, 11.5, 8.5, 44, 10.5, 33.5, 24]
 
 // MATH
 
-// random number
-const randomNumberFromZeroToTwenty = Math.floor(Math.random() * 21); // + 1 will start from 1 rather than 0
+//random number
+const randomNumberFromZeroToTwenty =Math.floor(Math.random() * 21); // + 1 will start from 1 rather than 0
 console.log(randomNumberFromZeroToTwenty);
 
-// minimum and maximum values in an array
-const arrayAges = [23, 19, 14, 26, 46, 8];
-const lowestAge = Math.min(...arrayAges);
-const highestAge = Math.max(...arrayAges);
+//Minimum and Maximum values in an array
+const ages = [23, 19, 14, 26, 46, 8];
+const lowestAge = Math.min(...ages);
+const highestAge = Math.max(...ages);
 console.log(`Oldest age is: ${highestAge}\nYoungest age is: ${lowestAge}`);
-
-// comparison operators
-let x = 5;
-console.log( x == "5"); //true Loose equality (performs type coercion)
-console.log( x == 5); // true
-console.log( x === "5"); //false Strict equality (checks both type and value)
-console.log( x === 5); // true
-console.log(x !== "5"); // true Strict inequality 
-console.log( x !== 5 ); // false
-// variable hoisting
-console.log(y); // undefined
-var y = 10;
-console.log(y); // 10
-
-// CLASS
-class Student {
-    constructor(name) {
-        this.name = name;
-    }
-}
-
-let student = new Student("Blatter");
-console.log(student.name); // Blatter
-
-// STRING
-// String Methods
-const textString = "javascript";
-console.log(textString.at(0)); // j
-console.log(textString.charCodeAt(0)); // returns the unicode of j (106)
-console.log(textString.startsWith("JAV".toLowerCase())); // true
-console.log(textString.endsWith("Script")); // false
-console.log(textString.includes("vas")); // true
-console.log(textString.slice(0, 4).localeCompare("java")); // returns 0 cause it's true (-1 if it was false)
-console.log(textString.replace(textString.slice(textString.indexOf("s")), "")); // java (replace first occurence)
-console.log(textString.replaceAll("a", "e")); //jevescript (replace all occurences)
-
-  
