@@ -158,3 +158,4 @@ console.log(textString.replace(textString.slice(textString.indexOf("s")), "")); 
 console.log(textString.replaceAll("a", "e")); //jevescript (replace all occurences)
 
 // RECURSION
+

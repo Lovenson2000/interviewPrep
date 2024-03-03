@@ -158,3 +158,17 @@ console.log(textString.replace(textString.slice(textString.indexOf("s")), "")); 
 console.log(textString.replaceAll("a", "e")); //jevescript (replace all occurences)
 
 // RECURSION
+
+function outerFunction() {
+    let outerVariable = "I am from the outer function";
+  
+    function innerFunction() {
+      console.log(outerVariable); // Inner function can access outerVariable
+    }
+  
+    // Return the inner function (creating a closure)
+  }
+  
+  conssole.log(outerFunction);
+   // Outputs: "I am from the outer function"
+  
